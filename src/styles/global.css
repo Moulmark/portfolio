@@ -8,4 +8,8 @@
     height: 100%;
     font-family: 'JetBrains Mono Variable', monospace;
   }
+
+  .layout {
+    @apply m-auto w-[90%] max-w-2xl py-10 h-full tracking-tight space-y-2;
+  }
 }

@@ -1,5 +1,6 @@
 ---
 import Head from '@components/Head.astro'
+import Navbar from '@components/Navbar.astro'
 import '@fontsource-variable/jetbrains-mono'
 import '@styles/global.css'
 ---
@@ -7,8 +8,9 @@ import '@styles/global.css'
 <!doctype html>
 <html lang="en">
   <Head />
-  <body>
-    <div class="m-auto w-[90%] max-w-2xl py-10 h-full">
+  <body class="text-neutral-200 bg-neutral-900">
+    <div class="layout">
+      <Navbar />
       <slot />
     </div>
   </body>
