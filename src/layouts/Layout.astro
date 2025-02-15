@@ -1,5 +1,6 @@
 ---
 import Head from '@components/Head.astro'
+import '@fontsource-variable/jetbrains-mono'
 import '@styles/global.css'
 ---
 
@@ -7,15 +8,8 @@ import '@styles/global.css'
 <html lang="en">
   <Head />
   <body>
-    <slot />
+    <div class="m-auto w-[90%] max-w-2xl py-10 h-full">
+      <slot />
+    </div>
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
