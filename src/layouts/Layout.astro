@@ -1,17 +1,20 @@
 ---
 import Head from '@components/Head.astro'
-import Navbar from '@components/Navbar.astro'
-import '@fontsource-variable/jetbrains-mono'
+import '@fontsource-variable/inter'
 import '@styles/global.css'
 ---
 
 <!doctype html>
 <html lang="en">
   <Head />
-  <body class="text-neutral-200 bg-neutral-900">
-    <div class="layout">
-      <Navbar />
-      <slot />
+  <body>
+    <div class="m-auto max-w-5xl py-10">
+      <div class="flex items-start gap-20">
+        <div class="flex flex-col space-y-10 w-[30%]">
+          <slot name="sidebar" />
+        </div>
+        <slot name="content" />
+      </div>
     </div>
   </body>
 </html>
