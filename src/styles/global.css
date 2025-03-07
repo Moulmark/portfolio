@@ -1,11 +1,9 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@layer base {
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Inter Variable', sans-serif;
-  }
+@theme {
+  --font-inter: 'Inter Variable', sans-serif;
+  --font-anton: 'Anton', sans-serif;
+  --color-primary: #1C1C1C;
+  --color-gray: #A7A9BE;
+  --color-pastel: #FFF6E8;
 }

@@ -1,0 +1,13 @@
+---
+import Layout from './Layout.astro'
+import PostHead from '@components/posts/PostHead.astro'
+
+const { post } = Astro.props
+---
+
+<Layout title={'Blog - ' + post.data.title}>
+  <PostHead {post} />
+  <div class="m-auto max-w-3xl">
+    <slot />
+  </div>
+</Layout>
